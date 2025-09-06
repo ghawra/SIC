@@ -9,10 +9,11 @@ try:
 
     hasil = konversi_suhu(nilai, dari, ke)
 
-    if isinstance(hasil, str):  # Jika error message
+    if isinstance(hasil, str):
         print(hasil)
     else:
         print(f"Hasil: {nilai}°{dari.upper()} = {hasil:.1f}°{ke.upper()}")
 
 except ValueError:
     print("Error: Nilai suhu harus berupa angka.")
+
